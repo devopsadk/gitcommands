@@ -45,10 +45,17 @@ git commit -m "First release of Hello World!"
      git checkout master
      git merge branchname so that branch gets merged with the master and master will be updated 
 12. delete branch git branch -d branchname
-    git branch -r -- list all the branches
+    git branch -r -- list all the remote branches
+    git branch -a -- list all the local branches
+
+    Create and switch to new branch
+    git checkout -b emergency-fix
 
 13. open git hub.com and create a repository and in the client on your desktop use below command to map
 git remote add origin https://github.com/w3schools-test/hello-world.git
+
+Now we are going to push our master branch to the origin url, and set it as the default remote branch:
+git push --set-upstream origin master
 
 14. Now local repository contents are moved to github and new files added can be pushed to repository using
  git push command
