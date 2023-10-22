@@ -101,3 +101,4 @@ git push --set-upstream origin master
 23. git branch -a -- will display both remote and local
 24. git branch -d prod -- Delete the branch here prod branch is deleted this is for deleting local branch
 25. git push origin -d test -- This is to delete remote branch
+![Alt text](merge.PNG)
