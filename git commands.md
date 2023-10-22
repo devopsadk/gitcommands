@@ -87,3 +87,17 @@ git push --set-upstream origin master
 19. Revert back to any step
     first use git logs -- oneline
     then git commit #number
+
+
+20. Suppose if I have a branch in local and want to push to remote then use below command
+     git push -u origin linux   (Here linux ix the branch)
+
+     Suppose if I want to move all the branches the
+     git push --all
+
+
+21. git branch - Will display all the branches
+22. git branch -r -- will display the remote branch
+23. git branch -a -- will display both remote and local
+24. git branch -d prod -- Delete the branch here prod branch is deleted this is for deleting local branch
+25. git push origin -d test -- This is to delete remote branch
