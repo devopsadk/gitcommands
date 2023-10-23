@@ -129,4 +129,11 @@ and save
 
 git commit -m "file update" --amend
 
-    
+30. Branching strategy
+
+ 1. Gitflow
+ 2. Trunkbased 
+![Alt text](gitflow.PNG)
+How do I Make a Branch Point at a Specific Commit in Git?
+
+git reset --hard 26a90b4 :)
