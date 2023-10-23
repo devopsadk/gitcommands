@@ -102,3 +102,22 @@ git push --set-upstream origin master
 24. git branch -d prod -- Delete the branch here prod branch is deleted this is for deleting local branch
 25. git push origin -d test -- This is to delete remote branch
 ![Alt text](merge.PNG)
+
+26. cherry pick - We are moving only particular commit id from one branch to other 
+
+    git log --oneline
+    git cherry-pick 204413c 97ffbac
+
+27. Merge follows the timestamp
+    Rebase follow top of the commit history
+
+    If you want to merge as per the commit history then follow below steps
+    1. suppose if you want to merge dev branch with master
+    git rebase master
+    git checkout master
+    git merge dev master
+    check using 
+    git log --oneline
+28. Squashing -- Process of adding multiple commit id under one commit id  
+
+    
