@@ -118,6 +118,13 @@ git push --set-upstream origin master
     git merge dev master
     check using 
     git log --oneline
-28. Squashing -- Process of adding multiple commit id under one commit id  
+28. Squashing -- Process of adding multiple commit id under one commit id
+
+    git rebase -i HEAD~3
+![Alt text](squash.PNG)
+
+and save
+
+29. Ammend will add previous commits and no squashing is required with this option :)  
 
     
