@@ -125,6 +125,8 @@ git push --set-upstream origin master
 
 and save
 
-29. Ammend will add previous commits and no squashing is required with this option :)  
+29. Amend will add previous commits and no squashing is required with this option :)  
+
+git commit -m "file update" --amend
 
     
