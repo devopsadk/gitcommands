@@ -132,8 +132,37 @@ git commit -m "file update" --amend
 30. Branching strategy
 
  1. Gitflow
- 2. Trunkbased 
+ 2. Trunkbased -- Feature branch is created using master.Work on it and merge with the master and delete the feature branch
+
+
 ![Alt text](gitflow.PNG)
+
+
+![Alt text](flow.PNG)
 How do I Make a Branch Point at a Specific Commit in Git?
 
 git reset --hard 26a90b4 :)
+
+Pull request in github is the process of merging the code between the branches and the reviewers can be added to this .
+A description including the user story has to be mentioned
+
+using ssh for cloning
+
+setting up ssh connection between your machine and github
+* on your windows system use the command ssh-keygen and generate key
+  cat .ssh/id_rsa.pub here there is a public key copy this and paste in the github > settings > sshand GPS keys > paste keys here
+  after that you can clone using the 
+  git@github.com:devopsadk/gitcommands.git
+
+  similary on Linux machine connect to aws ec2 linux instance we are using RHEL
+  yum install git -y
+  git --version
+  now create dir mkdir gitprac
+  git clone https://github.com/devopsadk/gitcommands.git (trying with https first)
+
+  You need to create the PAT . Go to github> settings > developer settings > Personal access token. Here generate the token .
+  Now enter the github user name and password the token which was generated . Then try to push it works :)
+
+  For ssh on linux machine repeat same steps as windows
+
+  
