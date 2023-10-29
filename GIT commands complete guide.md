@@ -128,6 +128,8 @@ git branch -a -- displat all local and remote branch
 
 git branch branchname -- to create branch
 
+git branch -v ---------- This will show all the branch and the current branch your in
+
 git checkout branchname
 
 git checkout -b branchname # create and switch to new branch
@@ -143,3 +145,63 @@ git reset filename -- To untrack the tracked files (Revert back to working area 
  If your facing issues to move to previous commit due to conflict but you still want to move then use
 
  git reset 89f6c3d --hard
+
+ git branch -d Gbranch -- To delete branch
+
+ ----------------------------------------------------------------------------------------------
+ Merge process
+
+ First, checkout to Master
+
+ git checkou master
+
+ git merge win master ------- Now win branch is merged with master
+
+ -----------------------------------------------------------------------------------------------
+
+Push all branches to remote repository
+
+git push --all
+
+-----------------------------------------------------------------------------------------------
+
+git rebase explained in simple words with example
+
+Rebasing in Git is a process of integrating a series of commits on top of another base tip. It takes all the commits of a branch and appends them to the commits of a new branch.
+
+The main aim of rebasing is to maintain a progressively straight and cleaner project history. Rebasing gives rise to a perfectly linear project history that can follow the end commit of the feature all the way to the beginning of the project without even forking. This makes it easier to navigate your project
+
+![Alt text](rebase.PNG)
+
+
+Example :
+
+manoj@MYSYSTEM MINGW64 /e/newreb (master)
+$ git log --oneline
+f007374 (HEAD -> master) Initial readme commit on master
+
+
+git checkout -b branch1
+
+touch a
+
+ git add . && git commit -m "Initial commit on branch created and added A file"
+
+manoj@MYSYSTEM MINGW64 /e/newreb (branch1)
+$ git log --oneline
+dcfa4cc (HEAD -> branch1) Initial commit on branch created and added A file
+f007374 (master) Initial readme commit on master
+
+ git rebase branch1 master ## Here we are moving contents from branch1 (feature branch) to master branch
+
+
+manoj@MYSYSTEM MINGW64 /e/newreb (master)
+$ git log --oneline
+dcfa4cc (HEAD -> master, branch1) Initial commit on branch created and added A file
+f007374 Initial readme commit on master
+
+
+
+
+
+
